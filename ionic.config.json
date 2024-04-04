@@ -1,0 +1,7 @@
+{
+  "name": "Rminder",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
