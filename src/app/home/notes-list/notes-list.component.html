@@ -1,0 +1,43 @@
+
+<div class="main-container">
+       
+  <div class="search-bar-container">
+    <!--<ion-searchbar placeholder="Filter" (ionInput)="filter($event.target.value)" ></ion-searchbar>-->
+    <div class="field">    
+      <p class="control has-icons-left">
+        <input 
+        class="input" 
+        type="text" 
+        placeholder="Filter" 
+
+        keyup="filter($event.target.value)"> <!--this not woring-->
+        <span class="icon is-small is-left">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+      </p>
+    </div>    
+  </div>  
+
+
+  <div class="notes-list" [@listAnim]>
+    <app-note-card
+      *ngFor="let note of filteredNotes; let i = index" 
+      link="{{i}}"
+      [@itemAnim]
+      (delete)="deleteNote(i)"
+      [title]="note.title" 
+      [body]="note.body"></app-note-card>
+  </div>
+
+  <button class="button floating-add-button is-primary" routerLink="new"> + Add</button>
+  
+  <!-- this button moves with the cards!!!-->
+ <!--<ion-fab slot="fixed" vertical="bottom" horizontal="center">
+    <ion-fab-button color="danger">
+      <ion-icon class="add-button" routerLink="new" name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>-->
+  
+
+
+</div>  
