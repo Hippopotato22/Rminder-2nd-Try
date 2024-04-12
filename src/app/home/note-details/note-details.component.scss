@@ -1,0 +1,52 @@
+//.form-container {
+    //max-width: 500px;
+
+  //  margin: auto;
+   // margin-top: 50px;
+//}
+
+.note-detail-form {
+    max-width: 500px;
+    
+    margin: auto;
+    margin-top: 50px;
+   
+    
+}
+
+.label {
+    margin-top: 10px;
+    color: rgb(253, 253, 253);
+}
+
+.textarea {
+    height: 450px;
+    background-color: rgb(248, 246, 246);
+}
+
+
+.note-body {
+    position: fixed;
+    margin-top: 30px;
+
+    
+    
+    
+}
+
+input, textarea {
+
+    &.ng-invalid.ng-touched {
+        border-color: red;
+
+        &:focus {
+        box-shadow: 0px 0px 0px 2px rgb(red, 0.1);
+        }
+    }
+
+    
+}
+
+
+
+

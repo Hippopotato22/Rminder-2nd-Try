@@ -1,0 +1,148 @@
+<div class="form-container">
+
+  <!--<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Notes
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>-->
+
+  <form #noteForm="ngForm" (ngSubmit)="onSubmit(noteForm)">
+
+    <div class="field">
+      <label class="label">Title</label>
+      <div class="control">
+        <input type="text" name="title" [ngModel]="note.title" required class="input">
+      </div>
+    </div>
+
+    <br>
+
+    <div class="field">
+      <label class="label">Notes</label>
+      <div class="control">
+        <textarea class="textarea" name="body" [ngModel]="note.body"></textarea>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="field is-grouped is-pulled-right">
+      <div class="control">
+        <button class="button is-text" type="button" (click)="cancel()">Cancel</button>
+      </div>
+
+      <div class="control">   <!--[] symbol is property binding-->
+        <button class="button is-primary" type="submit" [disabled]="!noteForm.valid">Save</button>
+      </div>
+    </div>
+
+  </form>
+
+  <ion-button id="trigger-button">Alarm</ion-button>
+<ion-popover trigger="trigger-button" size="auto-grow">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <app-note-alarm></app-note-alarm>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+  
+
+  <!--<ion-content>
+
+
+    <ion-list> 
+      <ion-item>
+        
+        <ion-input
+
+        aria-label="Custom input"
+        placeholder="Title"
+
+        
+        required
+        class="Title"
+
+        helperText="Minimun of 30 characters"
+        [counter]="true"
+        [maxlength]="30"
+       ></ion-input>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>  
+
+  <br>
+
+  <ion-content >   
+         
+    <ion-item class="note-body">
+        
+      <ion-textarea 
+      label="Your notes" 
+      labelPlacement="floating" 
+      placeholder="Note something"
+      auto-grow="true"
+      maxlength="3000"
+
+      ></ion-textarea>
+      
+
+    </ion-item>
+    
+    
+
+  </ion-content>
+   
+
+
+  
+
+
+  
+ 
+ 
+  <ion-item>
+    <ion-input label="Your note" label-placement="floating" fill="outline" placeholder="Note something down"></ion-input>
+  </ion-item>
+
+    
+  <br>
+  
+    <div class="note-detail-form">
+      <form #noteForm="ngForm">
+
+        <div class="field">
+          <label class="label">Title</label>
+          <div class="control">
+            <input type="text" class="input">
+          </div>
+        </div>
+    
+        <br>
+    
+          <div class="field">
+            <label class="label">Body</label>
+            <div class="control">
+              <textarea class="textarea is-danger" placeholder="Note something down"></textarea>
+            </div>
+          </div>
+    
+          <div class="field is-grouped is-pulled-right">
+            
+            <div class="control">
+              <button class="button is-text">Cancel</button>
+            </div>
+
+            <div class="control">
+              <button class="button is-primary">Save</button>
+            </div>
+
+          </div>
+
+      </form>
+    </div>-->
+
+</div>
