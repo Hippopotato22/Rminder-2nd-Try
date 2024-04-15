@@ -1,0 +1,12 @@
+<ion-content class="alarm-container">
+
+
+  <!--<ion-datetime color="dark" [showDefaultTitle]="true" [showDefaultButtons]="true"></ion-datetime>
+  <ion-datetime class="alarmClock" color="danger" [showDefaultButtons]="true"></ion-datetime>-->
+
+  <ion-item>
+    <ion-label position="stacked">Alarm Time</ion-label>
+    <ion-datetime displayFormat="h:mm A" [(ngModel)]="alarmTime"></ion-datetime>
+  </ion-item>
+  <ion-button expand="block" (click)="setAlarm()">Set Alarm</ion-button>
+</ion-content>
