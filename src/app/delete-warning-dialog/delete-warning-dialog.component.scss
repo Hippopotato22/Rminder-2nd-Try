@@ -1,0 +1,53 @@
+/* delete-warning-dialog.component.scss */
+
+/* Container styles */
+.mat-dialog-container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Title styles */
+.mat-dialog-title {
+    color: #f44336; /* Red color for warning */
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+  }
+  
+  /* Content styles */
+.mat-dialog-content {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Action buttons styles */
+.mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  /* Cancel button styles */
+.mat-buttonCancel {
+    
+    color: #757575; /* Gray color for cancel button */
+    margin-right: 30px;
+  }
+  
+  /* Delete button styles */
+.mat-buttonDelete {
+    border-radius: 5px;
+    background-color: #f44336; /* Red color for delete button */
+    
+    
+    color: #fff;
+  }
+  
+.mat-dialog-actions:hover {
+    opacity: 0.8;
+}
+
+  
