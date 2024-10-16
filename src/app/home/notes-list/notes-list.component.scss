@@ -1,0 +1,60 @@
+@import '../../../main-styles.scss';
+
+
+.notes-list {
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+
+app-note-card {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-bar-container {
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+    
+    max-width: 400px;
+
+    ion-searchbar {
+        --display: flex;
+        --flex-direction: column;
+        --margin-top: 6px;
+        
+    
+        --max-width: 200px;
+        --border-radius: 20px;
+    }
+}
+
+
+
+.floating-add-button {
+    position: fixed;
+    bottom: 40px;
+    width: 80px;
+    border-radius: 50px;
+    left: 40%;
+    
+    z-index: 3;
+    box-shadow: 0px 0px 15px 5px rgba(white, 0.5);
+    //margin-left: 155px;
+    background: linear-gradient(to top, #353535, #d7d7d7);
+    
+    height: 40px;
+    //font-size: 18px;
+    
+    
+}
+
+.floating-stop-button {
+    position: fixed;
+    bottom: 100px;
+    width: 400px;
+    border-radius: 0;
+
+    box-shadow: 0px 0px 15px 5px rgba(blue, 0.2);
+}

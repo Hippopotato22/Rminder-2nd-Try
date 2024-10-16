@@ -1,0 +1,51 @@
+// Dark theme styling for ion-item and related components
+//ion-item {
+
+
+ion-content {
+  
+    background-color: #1a1a1a; // Dark grey background
+    border: 1px solid #444; // Slightly lighter border
+    border-radius: 8px; // Rounded corners
+    padding: 5px;
+   // margin: 15px 0;
+   
+  
+    ion-label {
+      font-size: 1.2rem; // Increase font size of the label
+      font-weight: bold; // Make the label bold
+      color: #e0e0e0; // Light grey color for the label
+      
+    }
+  
+    ion-datetime {
+      background-color: #333; // Darker grey for the datetime input
+      color: #ffffff; // Light grey text color
+      border: none; // Remove default border
+      border-radius: 4px; // Rounded corners
+      
+      
+      // Placeholder styling
+      &::placeholder {
+        color: #aaa; // Lighter grey for placeholder
+      }
+  
+      // Focus state
+      &:focus {
+        outline: none; // Remove outline on focus
+        border-color: #666; // Change border color on focus
+      }
+    }
+  }
+  
+  // Optional: Global styles for a darker theme
+  body {
+    --ion-background-color: #000000; // Set global background to black
+    --ion-text-color: #e0e0e0; // Set global text color to light grey
+    --ion-toolbar-background: #1a1a1a; // Dark background for toolbars
+    --ion-toolbar-color: #e0e0e0; // Light text for toolbars
+  }
+
+
+
+

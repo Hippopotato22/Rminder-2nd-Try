@@ -1,0 +1,208 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: rgb(255, 255, 255);
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.ion-card {
+  background: lawngreen;
+}
+
+ion-title {
+  position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: grey ;
+}
+
+ion-toolbar {
+  //--background: url('../../assets/6081777.jpg') ; //no-repeat fixed center;
+  --opacity: 0;
+  
+  //display: flex;
+  
+  //height: 100%;
+}
+
+ion-content {
+  --background: url('../../assets/BLACK\ AND\ GREY\ FLAT\ PHONE\ WALLPAPERS\ -\ COLLECTION\ 190.jpg');
+  
+}
+  
+
+
+
+/* Container for the starry background, only covering the top half */
+.starry-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115%; /* Only covers the top half */
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Style for individual stars */
+.star {
+  position: absolute;
+  width: 2px; /* Base size */
+  height: 2px; /* Base size */
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+  animation: blink 2s infinite ease-in-out alternate;
+}
+
+/* Twinkling/blinking effect */
+@keyframes blink {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+
+//Character
+.idle-cat {
+  pointer-events: none;
+  position: fixed;
+  bottom: 20px; /* Position the cat at the bottom */
+  left: 10%; /* Adjust as needed */
+  width: 100px; /* Adjust size */
+  height: 100px; /* Keep height in proportion */
+
+  background: url('../../assets/animation/IdleCatt.png') no-repeat;
+  background-size: cover;
+  animation: playIdle 1s steps(6) infinite; /* Adjust '6' to the number of frames */
+
+  /* Optional: Add slight opacity or shadow */
+  opacity: 0.9;
+
+  z-index: 1;
+}
+
+@keyframes playIdle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -600px 0; /* Adjust -600px based on the width of all frames combined */
+  }
+}
+
+.Egyptidle-cat {
+  pointer-events: none;
+  position: fixed;
+  bottom: 80px; /* Position the cat at the bottom */
+  left: 42%; /* Adjust as needed */
+  width: 100px; /* Adjust size */
+  height: 100px; /* Keep height in proportion */
+  
+
+  background: url('../../assets/animation/wizardCatIdle.png') no-repeat;
+  background-size: cover;
+  animation: playIdle 1s steps(6) infinite; /* Adjust '6' to the number of frames */
+
+
+
+
+  /* Optional: Add slight opacity or shadow */
+  //opacity: 0.9;
+
+  z-index: 5;
+}
+
+@keyframes playIdle {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -600px 0; /* Adjust -600px based on the width of all frames combined */
+  }
+}
+
+
+
+
+
+
+
+
+
+//Cat
+.flying-cats {
+  position: fixed;
+  top: 9px;
+  left: 8px;
+  width: 100%;
+  height: 50%; /* Only cover the top half of the screen */
+  pointer-events: none;
+  z-index: 1;
+ 
+}
+
+.cat {
+  position: absolute;
+  width: 100px; /* Adjust the size */
+  height: auto;
+  left: -100px; /* Start just outside the left edge of the viewport */
+  animation: flyAcross 5s linear infinite; /* Duration increased to make it more visible */
+}
+
+.cat-sprite {
+  width: 100px; /* Width of each frame */
+  height: 100px; /* Height of each frame */
+  background: url('../../assets/animation/JumpCatttt.png') no-repeat;
+  background-size: cover;
+  animation: playSprite 1s steps(10) infinite; /* Adjust '10' to match number of frames */
+}
+
+@keyframes flyAcross {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+
+@keyframes playSprite {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0; /* Adjust -1000px to the width of all frames combined */
+  }
+}

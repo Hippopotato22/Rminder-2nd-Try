@@ -1,0 +1,150 @@
+
+.note-card-container {
+    z-index: 2;
+    position: relative;
+    background: linear-gradient(to bottom, #0d2038, #DBCBD8);
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    
+
+    box-shadow: 0px 2px 15px 2px rgba(black, 0.068);
+    transition: box-shadow 0.2s ease-out;
+    
+    &:hover {
+        cursor: auto;
+        box-shadow: 0px 0px 0px 5px rgba(black, 0.068)
+
+    }
+
+    }
+
+    ion-card {
+        --background: white;
+        
+      }
+
+    
+    .note-card-content {
+        padding: 2px;
+       
+        
+        
+
+        .ion-card-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(71, 70, 70);
+           
+        }
+        
+        
+        
+        
+        .note-card-body {
+            
+            position: relative;
+            margin-bottom: 10px;
+
+            //maximum height before truncated
+            max-height: 60px;
+            overflow: hidden;
+
+
+            .fade-out-truncation {
+                position: absolute;
+
+                bottom: 0;
+
+                height: 50%;
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(white, 0) 0%, rgba(white, 0.8) 50%, white 100%);
+            }
+        }
+    }
+
+
+.x-button {
+    position: absolute;
+
+    //12 px from top
+    top: 15px;
+
+    //12px from right
+    right: 17px;
+
+    height: 34px;
+    width: 34px;
+    //background-color: lightcoral;
+  
+
+    border-radius: 5px;
+    background-image: url('../../../assets/close-circle-outline.svg');
+
+    transition: opacity 0.2s ease-out;
+
+    //x button blurred
+    opacity: 45%;
+
+    &:hover {
+        opacity: 40%;
+
+        background-color: darken($color: #e26060, $amount: 3%);
+    }
+
+    // on click
+    &:active {
+        background-color: darken($color: #ac0303, $amount: 5%);
+    }
+}   
+
+
+
+.edit-button {
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-size: 0px;
+    color: #ffffff;
+    
+    margin: auto;
+    //bottom: 15px; /* Position from the bottom */
+    right: 15px; /* Position from the right */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+   // background-color: #222; /* Dark background for button */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 0px 15px 5px rgba(rgb(0, 0, 0), 0.5);
+    
+    background: linear-gradient(to top, #0d2038, #DBCBD8);
+
+    cursor: pointer;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Include transform in the transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+
+}
+
+.edit-button:hover {
+    background-color: #555; /* Lighter color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* More pronounced shadow on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.edit-button:active {
+    background-color: #111; /* Darker color when clicked */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Smaller shadow when clicked */
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+
+
+.alarm-button {
+    margin-bottom: 13px;
+    margin-left: 18px;
+}
